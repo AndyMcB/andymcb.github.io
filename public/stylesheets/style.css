@@ -1,8 +1,47 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:bold");
+
+/* Black = #0f0f0f */
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  width: 825px;
+  margin: 56px auto;
+  font: 14px "Lato", Helvetica, Arial, sans-serif;
+  color: #0f0f0f;
 }
 
 a {
-  color: #00B7FF;
+  color: #26428b;
+}
+
+h1 {
+  font-family: "Playfair Display";
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+}
+  
+.contact-details {
+  flex: 1;
+  max-width: 300px;
+}
+
+.contact-details > p {
+  margin: 0;
+  line-height: 18px;
+}
+
+.intro {
+  flex: 2;
+  max-width: 300px;
+  margin: 0 auto 0 32px;
+}
+
+.intro > strong {
+  font-family: "Playfair Display";
+  font-weight: 600;
+  color: #0f0f0f;
 }
