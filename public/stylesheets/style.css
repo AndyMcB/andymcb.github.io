@@ -1,12 +1,14 @@
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:bold");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:bold|Playfair+Display");
 
 /* Black = #0f0f0f */
 
 body {
   width: 825px;
   margin: 56px auto;
+  padding: 72px;
   font: 14px "Lato", Helvetica, Arial, sans-serif;
-  color: #0f0f0f;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 7px 3px rgba(0,0,0,0.2);
 }
 
 a {
@@ -19,9 +21,50 @@ h1 {
   font-size: 24px;
 }
 
+h2{
+  margin: 0;
+  font-family: "Playfair Display";
+  font-weight: 600;
+  font-size: 18px;
+}
+
+h2 .subtitle {
+  font-weight: 400;
+}
+
+ul {
+  font-size: 14px;
+  padding-left: 54px;
+}
+
+li {   
+  list-style-type: none;
+  position: relative;    
+  margin-bottom: 8px;
+}
+
+li::before {
+    content: '•';
+    position: absolute;
+    top: -7px;
+    left: -18px;          /* Adjust this value so that it appears where you want. */
+    font-size: 28px;      /* Adjust this value so that it appears what size you want. */
+}
+
+/* Header block includes name, contect info and intro*/
+.header {
+  margin-bottom: 48px;
+}
+
 .container{
   display: flex;
   flex-direction: row;
+}
+
+.date{
+  margin-bottom: 2px;
+  font-size: 12px;
+  color: #666666;
 }
   
 .contact-details {
@@ -36,7 +79,7 @@ h1 {
 
 .intro {
   flex: 2;
-  max-width: 300px;
+  max-width: 360px;
   margin: 0 auto 0 32px;
 }
 
@@ -45,3 +88,21 @@ h1 {
   font-weight: 600;
   color: #0f0f0f;
 }
+
+/*--------------------------------------------------------------*/
+
+/* Experience - This section contains multiple blocks of content:
+          - a date
+          - a title and subtitle
+          - a three bullet list with relevant info
+*/
+
+.experience {
+
+}
+
+.experience .block {
+  margin-bottom: 36px;
+}
+
+/*--------------------------------------------------------------*/
