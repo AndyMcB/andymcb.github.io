@@ -41,7 +41,7 @@ ul {
 li {   
   list-style-type: none;
   position: relative;    
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 li::before {
@@ -51,6 +51,14 @@ li::before {
     left: -18px;          
     font-size: 28px;      
 }
+
+button {
+  font-family: "Playfair Display";
+  font-size: 16px;
+  padding: 12px;
+}
+
+/* Styling for sublists i.e. ul inside ul*/
 
 .inner-list {
   list-style-type: square;
@@ -120,6 +128,20 @@ li::before {
 
 .experience .block {
   margin-bottom: 36px;
+}
+
+.awards-and-volunteering {
+  display: flex;
+  align-items: center;
+}
+
+.awards-and-volunteering .block {
+  display: inline-block;
+  flex: 1 0 auto;
+}
+
+.awards-and-volunteering ul {
+  max-width: 350px;
 }
 
 /*--------------------------------------------------------------*/
